@@ -1,23 +1,23 @@
-:root{
-    --color-text: #fafafa;
-    --color-nav-text: #fafafa;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap');
 
-header div .logo{
-    position: absolute;
-    width: 10rem;
-    margin: .5rem;
-}
+/*----------------- Header -------------------*/
 
 header{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
 }
 
-header div{
+header nav .logo{
+    position: absolute;
+    width: 10rem;
+    margin: .7rem;
+}
+
+
+header nav{
     background-color: orchid;
-    height: 4.5rem;
 }
 
 header nav ul{
@@ -25,24 +25,117 @@ header nav ul{
     font-size: 0;
 }
 
-nav ul li{
+header nav ul li{
     display: inline-block;
-}
-
-nav ul li a{
-    background-color: orangered;
-    padding: 1.4rem 5rem;
     font-size: 1.5rem;
-    display: block;
+    vertical-align: middle;
+    padding: 1.5rem 3rem;
+    background-color: coral;
+    height: 5rem;
 }
 
-nav ul li:last-child a{
-    padding: 1.25rem 7rem;
+
+header nav ul li:last-child{
+    background-image: url(../asset/loop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    margin: 0 4rem;
+}
+
+/*----------------- Section 1 -------------------*/
+
+main section h1{
+    background-image: url(../asset/famille-hiver-neige-ambiance-311.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fafafa;
+    padding: 30rem 0;
+    font-size: 9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+main section:first-child{
+    border: solid 0.1rem rgba(0, 0, 0, 20%);
+    padding-bottom: 10rem;
+}
+
+/*----------------- Section 2 -------------------*/
+
+main section h2{
+    text-align: center;
+    color: dimgray;
+    padding: 6rem 0 1rem 0;
+    margin: 2rem 0;
+    font-size: 6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+main section ul{
+    margin: 2rem auto;
+    width: 120rem;
+}
+
+main section ul li{
+    display: inline-flex;
+    width: 28rem;
+    margin: .7rem;
+}
+
+main section ul li img{
+    width: 100%;
+    height: 24rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+}
+
+main section ul li:nth-child(3n) img{
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 90%);
+}
+
+main section ul li:nth-child(4n) img{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 85%);
+}
+
+main section ul figcaption h3{
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 
-nav ul li a img{
-    vertical-align: -0.45rem;
-    height: 2rem;
+
+
+/*----------------- Section 3 -------------------*/
+
+footer{
+    background-color: #222222;
+    color: #fafafa;
+    text-align: center;
+    padding: 20rem;
 }
 
+footer h3{
+    font-weight: 700;
+    margin: 5rem;
+
+}
+
+
+footer ul li{
+    display: inline-block;
+    margin: 0 10rem;
+}
+
+footer ul #city::before{
+    content: "\f041";
+    margin-right: 0.6rem;
+    
+}
+
+
+/*clip-path: polygon(0 0, 100% 0, 100% 83%, 0 90%);*/
