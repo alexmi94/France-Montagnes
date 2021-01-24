@@ -10,15 +10,14 @@
 </head>
 <body>
     <header>
-        <!--https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html-->
             
         <nav> 
             <img class="logo" src="./asset/logo.png" alt="logo">
             <ul>
-                <li><a href="">GUIDE DES STATIONS</a></li>
-                <li><a href="">MAGAZINE</a></li>
-                <li><a href="">INFO LIVE</a></li>
-                <li><a href="">RÉSERVATION</a></li>
+                <li class="guide_des_stations"><a href="#guide_des_stations">GUIDE DES STATIONS</a></li>
+                <li class="magazine"><a href="#magazine">MAGAZINE</a></li>
+                <li class="info_live"><a href="">INFO LIVE</a></li>
+                <li class="reservation"><a href="#reservation">RÉSERVATION</a></li>
                 <li></li>
             </ul>
         </nav>
@@ -76,12 +75,14 @@
     <footer>
         <h3 id="reservation">Réservation</h3>
         <ul>
-            <li id="city">Paris</li>
-            <li id="phone">Phone : +33 07 11 24 33 00</li>
-            <li id="email">Email: mail@gmail.com</li>
-            <li id="back">Retour à l'accueil</li>
+            <li class="city">Paris</li>
+            <li class="phone">Phone : +33 07 11 24 33 00</li>
+            <li class="email">Email: mail@gmail.com</li>
+            <li class="back"><a href="#guide_des_stations">Retour à l'accueil</a></li>
         </ul>
         <p>&copy; Design by Alex 2021</p>
     </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

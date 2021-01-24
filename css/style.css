@@ -17,7 +17,7 @@ header nav .logo{
 
 
 header nav{
-    background-color: orchid;
+    background-color: #fafafa;
 }
 
 header nav ul{
@@ -30,7 +30,6 @@ header nav ul li{
     font-size: 1.5rem;
     vertical-align: middle;
     padding: 1.5rem 3rem;
-    background-color: coral;
     height: 5rem;
 }
 
@@ -110,7 +109,7 @@ main section ul figcaption h3{
 
 
 
-/*----------------- Section 3 -------------------*/
+/*----------------- Footer -------------------*/
 
 footer{
     background-color: #222222;
@@ -119,23 +118,58 @@ footer{
     padding: 20rem;
 }
 
-footer h3{
-    font-weight: 700;
-    margin: 5rem;
-
+footer li a{
+    color: #fafafa;
 }
 
+footer h3{
+    font-weight: 700;
+}
+
+footer p, footer h3{
+    margin: 7rem;
+}
 
 footer ul li{
     display: inline-block;
     margin: 0 10rem;
 }
 
-footer ul #city::before{
-    content: "\f041";
-    margin-right: 0.6rem;
-    
+footer ul li::before{
+    margin-right: 1rem;  
 }
 
+footer ul .city::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f041";
+}
+footer ul .phone::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";
+}
 
-/*clip-path: polygon(0 0, 100% 0, 100% 83%, 0 90%);*/
+footer ul .email::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e0";
+}
+
+footer ul .back::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0d8";
+}
+
+/*Animation*/
+
+.guide_des_stations:hover, .magazine:hover, .info_live:hover, .reservation:hover{
+    background-color: #222222;
+    transition-duration: 0.3s;
+}
+
+.guide_des_stations:hover a, .magazine:hover a, .info_live:hover a, .reservation:hover a{
+    color: #fafafa;
+}
+
+.nav_active, .nav_active a{
+    background-color: #222222;
+    color: #fafafa;
+}
+
+html{
+    scroll-behavior: smooth;
+}
