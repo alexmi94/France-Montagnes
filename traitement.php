@@ -1,4 +1,5 @@
-<?php
+<?php   
+        try{
         $bdd = new PDO('mysql:host=localhost;dbname=vacances', 'root', '');
         $offre = $bdd->query('SELECT * FROM offre');
         while ($data = $offre->fetch()){
@@ -13,4 +14,8 @@
             </figure>
         </li>';
         }
+        $offre->closeCursor();
+    }catch(Exception $e){
+        die('Erreur : '.$e->getMessage());
+    }
 ?>
